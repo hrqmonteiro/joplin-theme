@@ -118,4 +118,4 @@ If you have any questions, feel free to ask, you can reach me on the Joplin's [f
 
 If you want to support my work, you can donate, it would be very appreciated!
 
-**BTC**: *35MVD6xjhTh9hsQ1TYJRbHDDYL7Tf3BmbN&
+**BTC**: *35MVD6xjhTh9hsQ1TYJRbHDDYL7Tf3BmbN*
