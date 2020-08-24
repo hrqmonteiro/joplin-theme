@@ -71,14 +71,15 @@ You need to get your icons from the cheatsheet, you can find it on Nerd font's w
 ![screenshot2.png](/assets/screenshot2.png)
 
 ### Notes section
-![screenshot3.png](/assets/screenshot4.png)
+![screenshot3.png](/assets/screenshot3.png)
 
 ### Rendered markdown
 ![screenshot4.png](/assets/screenshot4.png)
 
 ### Custom checkboxes
 ![screenshot5.png](/assets/screenshot5.png)
-![screenshot6.png](/assets/screenshot6.png)
+![screenshot6.png](/assets/screenshot6.png)  
 ![screenshot7.png](/assets/screenshot7.png)
+![screenshot8.png](/assets/screenshot8.png)
 
 You can set it on *userchrome.css*, just replace the glyphs for anyone you like it from FontAwesome or Material Icons.
