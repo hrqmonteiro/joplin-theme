@@ -12,7 +12,7 @@ Built upon <a href="https://github.com/amandamcg/joplin-theme" target="blank">Am
 
 ## Details: 
 
-This is the resources i added to my theme. The [setup](#setup) section will guide you on how to install it.
+These are the resources i added to my theme. The [setup](#setup) section will guide you on how to install it.
 
 * Dark theme: based on the default Joplin dark theme and, as stated before, on Amanda's theme.
 * Colorscheme: i call it **Neptune**, i use it on many things on my setup (Linux rice, Vim colors, and other applications).
