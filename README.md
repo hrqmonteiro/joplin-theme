@@ -112,4 +112,4 @@ li.md-checkbox [type="checkbox"]:checked + label:after {
 ```
 ###  Notes
 
-If you have any questions, feel free to ask, you can reach me on the Joplin's [https://discourse.joplinapp.org](forum), i'm user **@hrqmonteiro** there!
+If you have any questions, feel free to ask, you can reach me on the Joplin's [forum](https://discourse.joplinapp.org), i'm user **@hrqmonteiro** there!
