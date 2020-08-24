@@ -1,0 +1,380 @@
+/* html-ized markdown */
+/* designed originally by uxamanda (https://discourse.joplinapp.org/u/uxamanda). latest version https://github.com/amandamcg/joplin-theme */
+/* Redesigned by Stephen (robotcorner) https://https://github.com/robotcorner/joplin-theme-dark-gruvbox */
+
+:root {
+    --white: #E5FFDE;
+    --dark-white: #CEE5C7;
+    --light-grey: #1E192E;
+    --grey: #040010;
+    --dark-grey: #040010;
+    --darker-grey: #040010;
+    --black: #050017;
+    --red: #FF1744;
+    --red-dark: #FF1744;
+    --green: #23CD60;
+    --green-dark: #23CD60;
+    --yellow: #E7AE1D;
+    --yellow-dark: #E7AE1D;
+    --blue: #02A4F1;
+    --blue-dark: #02A4F1;
+    --purple: #F459F4;
+    --purple-dark: #F459F4;
+    --aqua: #00F8F8;
+    --aqua-dark: #00F8F8;
+    --orange: #E7AE1D;
+    --orange-dark: #E7AE1D;
+    --base-size-1: 1px;
+    --base-size-4: 5px;
+    --base-size-8: 9px;
+    --base-size-11: 11px;
+    --base-size-13: 13px;
+    --base-size-14: 14px;
+    --base-size-15: 15px;
+    --base-size-16: 16px;
+    --base-size-17: 17px;
+    --base-size-18: 18px;
+    --base-size-18: 19px;
+    --base-size-24: 24px;
+    --base-size-32: 32px;
+    --base-size-40: 40px;
+    --base-size-272: 272px;
+    --z-toc: 99;
+    --font-weight-light: 300;
+    --font-weight-base: 550;
+    --font-weight-base-extra: 550;
+    --font-weight-bold: 600;
+    --font-title: "GoogleSans Nerd Font";
+    --font-sans: "GoogleSans Nerd Font"; /*Montserrat or Corbel*/
+    --font-mono: "RobotoMono Nerd Font";
+    --primary: var(--yellow);
+    --secondary: var(--yellow);
+    --font-line-height: 1.4em;
+    --font-size: var(--base-size-17);
+    --icon-size: var(--font-size);
+}
+
+.yellow {
+    color: var(--yellow) !important;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-light) !important;
+    letter-spacing: 0.01em;
+    margin-top: var(--base-size-24);
+}
+
+.blue {
+    color: var(--blue) !important;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-light) !important;
+    letter-spacing: 0.01em;
+    margin-top: var(--base-size-24);
+}
+
+.purple {
+    color: var(--purple) !important;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-light) !important;
+    letter-spacing: 0.01em;
+    margin-top: var(--base-size-24);
+}
+
+.hljs {
+    background-color: black;
+    padding: var(--base-size-18);
+    border-radius: var(--base-size-4) !important;
+}
+
+#rendered-md {
+    font-family: var(--font-sans) !important;
+    padding: 3%;
+}
+
+body {
+    font-family: var(--font-sans) !important;
+    font-weight: var(--font-weight-base) !important;
+    color: var(--dark-white);
+    background-color: var(--grey);
+    font-size: var(--font-size);
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, table {
+    margin-top: 0;
+}
+
+h1, h2, h3, h4 {
+    color: var(--white) !important;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-light) !important;
+    letter-spacing: 0.01em;
+    margin-top: var(--base-size-24);
+}
+
+h1 {
+    font-size: calc(var(--font-size)*2) !important;
+    line-height: var(--font-line-height) !important;
+    margin-top: var(--base-size-40) !important;
+    border-bottom: none !important;
+    font-weight: bold !important;
+}
+
+h1:first-child {
+    margin-top: 0px !important;
+}
+
+h2 {
+    font-size: calc(var(--font-size)*1.6) !important;
+    font-weight: bold !important;
+}
+
+h3 {
+    font-size: calc(var(--font-size)*1.4) !important;
+    font-weight: bold !important;
+}
+
+h4 {
+    font-size: calc(var(--font-size)*1.3) !important;
+    font-weight: bold !important;
+}
+
+p, li {
+    /* font-weight: var(--font-weight-base) !important; */
+    letter-spacing: .03em;
+    color: var(--dark-white);
+    margin-bottom: var(--base-size-24);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+ol li, ul li {
+    margin-bottom: var(--base-size-4);
+}
+
+ul ul {
+    /* list-style-type: cjk-heavenly-stem; */
+    list-style-type: disc;
+}
+
+hr {
+    padding: var(--base-size-11) !important;
+}
+
+blockquote {
+    color: var(--white) !important;
+    font-style: regular !important; 
+    opacity: 1;
+    padding-right: 8px;
+    border-radius: 8px !important;
+    border-left: 6px solid var(--green);
+    background-color: var(--light-grey);
+}
+
+blockquote strong {
+    font-style: bold !important; 
+    color: var(--green) !important;
+}
+
+blockquote em {
+    font-style: italic !important; 
+    color: var(--blue) !important;
+}
+
+li.md-checkbox [type="checkbox"]:not(:checked),
+li.md-checkbox [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+    margin-left: -32px !important;
+}
+
+li.md-checkbox [type="checkbox"]:not(:checked) + label,
+li.md-checkbox [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 1.5em;
+    cursor: pointer;
+    margin-left: -32px !important;
+}
+
+/* checkbox aspect */
+li.md-checkbox [type="checkbox"]:not(:checked) + label:before,
+li.md-checkbox [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0; top: -3px;
+    width: 1em; height: 1em;
+    border: 1px solid var(--black);
+    background: var(--black);
+    border-radius: 1px;
+}
+
+/* checked mark aspect */
+li.md-checkbox [type="checkbox"]:not(:checked) + label:after,
+li.md-checkbox [type="checkbox"]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 0; top: -3px;
+    width: 1em; height: 1em;
+    border: 1px solid var(--black);
+    background: var(--black);
+    border-radius: 1px;
+    transition: all .2s;
+}
+
+/* checked mark aspect changes */
+li.md-checkbox [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+li.md-checkbox [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+a, summary {
+    text-decoration: none !important;
+    padding: 0 0 var(--base-size-4) 0 !important;
+    color: var(--secondary) !important;
+    font-weight: var(--font-weight-bold) !important;
+}
+
+a:hover {
+    border-bottom: var(--base-size-1) dashed var(--secondary) !important;
+}
+
+a[data-resource-id] {
+    color: var(--dark-green) !important;
+    /* change the colour of INTERNAL links */
+    /* https://discourse.joplinapp.org/t/share-your-css/1730/65 */
+}
+
+a[data-resource-id] :hover {
+    border-bottom: var(--base-size-1) dashed var(--primary) !important;
+}
+
+/* joplin icon in joplin link */
+.resource-icon {
+    background-color: var(--primary) !important;
+    width: 0.75em;
+    height: 0.9em;
+    top: 0.1em;
+}
+
+/*
+```
+code blocks
+```
+*/
+pre {
+    font-family: var(--font-mono) !important;
+}
+
+/* ```inline code``` */
+.inline-code {
+    font-family: var(--font-mono) !important;
+    font-size: var(--base-size-15) !important;
+    padding: .3em .6em !important;
+    border-radius: var(--base-size-4) !important;
+    background-color: #040404 !important;
+    border: none !important;
+    color: var(--aqua) !important;
+}
+
+/* ==emphasis== */
+mark {
+    padding: 0 var(--base-size-4) !important;
+    background-color: var(--yellow-dark);
+}
+
+nav.table-of-contents>ul {
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: var(--z-toc);
+    background: var(--dark-grey);
+    padding: var(--base-size-8);
+    border-radius: var(--base-size-4);
+    max-width: 15%;
+    font-size: calc(var(--font-size)/1.3) !important;
+    max-height: var(--base-size-272);
+    overflow: scroll;
+    opacity: 1;
+}
+
+nav.table-of-contents ul {
+    list-style-type: none;
+    margin-left: var(--base-size-4);
+}
+
+nav.table-of-contents li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+}
+
+nav.table-of-contents li a {
+    padding: 0;
+    color: var(--light-grey) !important;
+}
+
+@media all and (min-width: 920px) {
+    nav.table-of-contents>ul {
+        height: 100%;
+        max-height: 100%;
+    }
+
+    #rendered-md {
+        width: 75%;
+    }
+}
+
+b-gray, b-green, b-red, b-blue, b-orange, b-pink, b-purple {
+    width: 90%;
+    display: block;
+    margin-left: 20px; 
+    padding: 10px;
+    border: 1px solid;
+    border-left: 5px solid;
+    border-radius: 2px; 
+    word-wrap: break-word;
+    box-shadow: 3px 3px 7px 0 rgba(255,255,255,0.7) ;
+    color: #000000;
+}
+
+b-gray {
+    border-color: #b1bcc2;
+    background-color: #e9edf0; 
+ }
+
+b-green {
+    border-color: #5fa04e;
+    background-color: #c5e5b4; 
+} 
+
+
+b-red {
+    border-color: #f65354;
+    background-color: #fad3d4; 
+}
+
+b-blue {
+    border-color: #229ade;
+    background-color: #bbe5fb; 
+}
+
+b-orange {
+    border-color: #cf7506;
+    background-color: #faf3d3; 
+}
+
+
+b-purple {
+    border-color: #af74e8;
+    background-color: #ead9fb; 
+}
+
+b-pink {
+    border-color: #ed5393;
+    background-color: #fad3e5; 
+}
+/**/

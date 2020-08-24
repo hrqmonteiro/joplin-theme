@@ -1,0 +1,499 @@
+/* html-ized markdown for entire app */
+/* designed originally by uxamanda (https://discourse.joplinapp.org/u/uxamanda). latest version https://github.com/amandamcg/joplin-theme */
+/* Redesigned by Stephen (robotcorner) https://https://github.com/robotcorner/joplin-theme-dark-gruvbox */
+
+:root {
+    --white: #E5FFDE;
+    --dark-white: #CEE5C7;
+    --light-grey: #1e192e;
+    --grey: #040010;
+    --dark-grey: #040010;
+    --darker-grey: #040010;
+    --black: #050017;
+    --blackest: #020007;
+    --red: #FF1744;
+    --red-dark: #FF1744;
+    --green: #23CD60;
+    --green-dark: #23CD60;
+    --yellow: #E7AE1D;
+    --yellow-dark: #E7AE1D;
+    --yellow-darkest: #E7AE1D;
+    --blue: #02A4F1;
+    --blue-dark: #02A4F1;
+    --purple: #F459F4;
+    --purple-dark: ##F459F4;
+    --aqua: #00F8F8;
+    --aqua-dark: #00F8F8;
+    --aqua-very-dark: #00F8F8;
+    --orange: #E7AE1D;
+    --orange-dark: #E7AE1D;
+
+    --base-size-1: 1px;
+    --base-size-4: 5px;
+    --base-size-8: 9px;
+    --base-size-10: 11px;
+    --base-size-14: 14px;
+    --base-size-15: 15px;
+    --base-size-16: 16px;
+    --base-size-17: 17px;
+    --base-size-18: 18px;
+    --base-size-24: 24px;
+    --base-size-32: 32px;
+    --base-size-40: 40px;
+    --base-size-272: 272px;
+    --z-toc: 99;
+    --font-weight-light: 300;
+    --font-weight-base: 500;
+    --font-weight-bold: 600;
+    --font-sans: "GoogleSans Nerd Font"; /*Bahnschrift */
+    --font-mono: "RobotoMono Nerd Font";
+    --Brandon: "Brandon Grotesque";
+    --Galliard: "Galliard EF Roman Italic";
+    --primary: var(--purple);
+    --secondary: var(--orange-dark);
+    --font-line-height: 1.4em;
+    --font-size: var(--base-size-15);
+    --icon-size: var(--font-size);
+}
+
+#react-root>div>div {
+    background-color: var(--black) !important;
+    font-size: var(--base-size-17) !important;
+}
+
+* {
+    font-family: var(--font-sans) !important;
+    font-weight: var(--font-weight-base) !important;
+    font-size: var(--font-size) !important;
+    line-height: var(--font-line-height) !important;
+}
+
+.fa, .far, .fas {
+    font-weight: 900 !important;
+    font-family: "Font Awesome 5 Free" !important;
+    font-size: var(--icon-size) !important;
+}
+
+.noteTextViewer {
+    border-left: 1px solid var(--grey) !important;
+}
+
+#react-root>div>div>div:last-child {
+    border-left: 1px solid var(--grey) !important;
+    background-color: var(--grey);
+}
+
+#react-root>div>div>div:last-child>div>div {
+    border-bottom: 1px solid var(--grey) !important;
+}
+
+#react-root>div>div>div:last-child>div>div>span {
+    font-family: var(--Brandon) !important;
+    font-weight: medium !important;
+    color: var(--white) !important;
+    padding: 0 18px 4px 4px !important;
+}
+
+#react-root>div>div>div:last-child>div>div>div .editor-toolbar {
+    border-bottom: 1px solid var(--grey) !important;
+    margin-bottom: 0 !important;
+    border-top: none !important;
+}
+
+#react-root>div>div>div:last-child>div>div .editor-toolbar {
+    border-bottom: 1px solid var(--grey) !important;
+}
+
+#react-root>div>div>div:last-child>div>div>div>div:last-child>div:last-child {
+    border: 1px solid var(--grey) !important;
+}
+
+/* markdown */
+.ace_text-layer {
+    padding: 3%;
+}
+
+.ace_content {
+    background-color: var(--grey) !important;
+}
+
+.ace_editor div, .ace_editor span {
+    font-family: var(--font-mono) !important;
+    font-weight: --font-weight-base;
+    color: var(--white);
+}
+
+.ace_heading {
+    /*color: var(--white) !important;*/
+    color: var(--yellow) !important;
+}
+
+/*Bold*/
+.ace_string.ace_strong {
+    color: var(--green-dark) !important;
+    font-weight: bold !important;
+}
+
+/* Italics */
+.ace_string.ace_emphasis {
+	color: var(--green-dark) !important;
+	font-style: italic !important;
+}
+
+/* Line Breaks */
+.ace_constant.ace_language.ace_escape {
+	color: gold !important;
+}
+
+.ace_variable {
+    color: var(--white) !important;
+}
+
+/* Lists and Checkboxes */
+.ace_list {
+    /*color: var(--light-grey) !important;*/
+    color: palegoldenrod !important;
+}
+
+/* Inline Codes and Codeblocks */
+.ace_support.ace_function {
+	color: var(--aqua) !important;
+}
+
+.ace_string {
+    color: var(--primary) !important;
+    
+}
+
+.ace_cursor {
+    border-left: var(--base-size-1) solid var(--orange) !important;
+}
+
+/* prevent cursor from blinking */
+/* https://discourse.joplinapp.org/t/share-your-css/1730/17 */
+.ace_cursor-layer:not(.ace_hidden-cursors) .ace_cursor {
+    opacity: 1 !important;
+}
+
+/* gui */
+.side-bar {
+    text-transform: uppercase;
+    background-color: var(--black) !important;
+    opacity: 1;
+}
+
+.side-bar .folders { 
+    text-transform: capitalize !important;
+    color: var(--black);
+}
+
+.side-bar .folders, .side-bar div, .side-bar span {
+    font-family: var(--Brandon) !important;
+    color: var(--white) !important;
+    font-weight: var(--font-weight-base) !important;
+    font-size: var(--base-size-17) !important;
+    margin-bottom: var(--base-size-1);
+}
+
+.list-item {
+    font-family: var(--font-sans) !important;
+    color: var(--white) !important;
+    font-weight: var(--font-weight-base) !important;
+    font-size: var(--font-size) !important;
+    margin-bottom: var(--base-size-1);
+}
+
+.side-bar div div {
+    font-size: var(--font-size) !important;
+}
+
+/* making icons the same width so text aligns */
+.side-bar .fas:first-of-type {
+    width: var(--base-size-17);
+    color: var(--dark-white) !important;
+}
+
+.list-item div:before {
+    font-family: var(--font-sans) !important;
+    font-size: 16px !important;
+    content: '';
+    position: absolute;
+    left: 33px; top: 129px;
+    width: 20px;
+    color: var(--yellow);
+}
+
+a.list-item:after {
+    font-size: 16px !important;
+    content: '';
+    position: absolute;
+    left: 34px; top: 154px;
+    color: var(--blue);
+}
+
+a.list-item:before {
+    font-family: var(--font-sans) !important;
+    font-size: 15px !important;
+    content: '';
+    position: absolute;
+    left: 34px; top: 179px;
+    color: var(--green);
+}
+
+.list-item div:after {
+    font-family: var(--font-sans) !important;
+    font-size: 15px !important;
+    content: '';
+    position: absolute;
+    left: 34px; top: 204px;
+    color: var(--red);
+}
+
+.list-item-depth-0:after {
+    font-family: var(--font-sans) !important;
+    font-size: 16px !important;
+    content: '﬘';
+    position: absolute;
+    left: 34px; top: 229px;
+    color: var(--aqua);
+}
+
+.list-item div {
+    margin-left: auto !important;
+    padding-right: var(--base-size-14) !important;
+    opacity: 1 !important;
+}
+
+.synchronize-button {}
+
+.note-list {
+    background-color: var(--black) !important;
+    color: var(--white) !important;
+    padding: var(--base-size-8) 0;
+    opacity: 1;
+}
+
+.note-list input[type="checkbox"i] {
+    opacity: 1 !important;
+}
+
+.note-list div {
+    background-color: var(--black) !important;
+    border-bottom: 0 !important;
+}
+
+.note-list div a {
+    color: var(--white) !important;
+    border-bottom: 0 !important;
+}
+
+.note-list div a:focus { 
+    background-color: var(--red) !important;
+    color: var(--white) !important;
+    border-bottom: 0 !important;
+}
+
+.note-list .list-item-container:hover, .folders .list-item-container:hover {
+    background-color: var(--red) !important;
+    color: var(--white) !important;
+}
+
+.note-list input[type="checkbox"i] {
+    margin-right: 1em !important;
+}
+
+.note-list a.list-item span, .tags .list-item {
+    /* font-family: "IBM Plex Mono" !important; */
+    /* font-size: 12px !important; */
+    text-transform: capitalize;
+    background-color: var(--black) !important;
+    color: var(--white) !important;
+}
+
+.tag-list {
+    order: 4;
+}
+
+div.tag-list span {
+    text-transform: capitalize !important;
+    background: var(--red) !important;
+    color: var(--white) !important;
+    border-radius: 8px;
+}
+
+/* icons */
+.fa, .far, .fas {
+    color: var(--dark-white) !important;
+    padding-right: var(--base-size-4);
+    padding-left: var(--base-size-4)
+}
+
+#react-root>div {
+    background-color: var(--grey) !important;
+}
+
+#react-root div div div:last-child div input {
+    margin: 0 !important;
+    margin-right: var(--base-size-18) !important;
+    margin-bottom: 4px !important;
+    height: 34px !important;
+    min-height: 34px !important;
+    font-size: var(--font-size) !important;
+    font-family: var(--font-mono);
+    font-weight: var(--font-weight-light);
+    background-color: var(--grey) !important
+}
+
+
+.editor-toolbar .button {
+    background-color: var(--grey) !important;
+    height: var(--base-size-40);
+}
+
+.editor-toolbar .button:not(.disabled):hover, .header .button:not(.disabled):hover{
+    color: var(--dark-white) !important;
+    background-color: var(--red) !important;
+    border: 1px solid var(--red) !important;
+}
+
+.editor-toolbar .button, .header .button {
+    border: 0 !important;
+}
+
+.editor-toolbar .button i {
+    font-size: var(--icon-size) !important;
+}
+
+.editor-toolbar .fa, .editor-toolbar .fas {
+    padding-right: 4;
+}
+
+div.header {
+     background: var(--black) !important;
+}
+
+.header {
+    border-bottom: var(--base-size-1) solid var(--black) !important;
+}
+
+.header .title {
+    color: var(--white);
+}
+
+a.button {
+background-color: var(--black) !important;
+}
+
+input {
+    font-family: var(--font-sans) !important;
+    border-radius: var(--base-size-4) !important;
+    border: 0px !important;
+    color: var(--white) !important;
+    background-color: var(--grey) !important;
+    border: var(--base-size-1) solid var(--black) !important;
+    opacity: 1;
+    /*outline: none;*/
+}
+
+input:focus {
+    outline: none;
+    border: var(--base-size-1) solid var(--orange-dark) !important;
+}
+
+.header .title {
+    display: none !important;
+}
+
+.folders i.fa.fa-minus-square, .folders i.fa.fa-plus-square {
+    padding-right: 3px !important;
+}
+
+.folders .list-item-container {
+    margin: 0 !important;
+}
+
+.side-bar .list-item:active,
+.side-bar .synchronize-button:active {
+    background-color: var(--red) !important;
+}
+
+.side-bar .synchronize-button:hover {
+    background-color: var(--red) !important;
+}
+
+.folders a.list-item {
+    padding-left: var(--base-size-8);
+    margin: 0 !important;
+}
+
+.side-bar>div:last-child div {
+    color: var(--white) !important;
+    font-family: var(--Brandon) !important;
+    font-weight: medium !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    font-size: var(--base-size-14) !important;
+    padding: 2px;
+}
+
+.side-bar>div:last-child {
+    padding: var(--base-size-4) !important;
+    border-top: var(--base-size-1) solid var(--black);
+}
+
+.synchronize-button {
+    border: none !important;
+    background: var(--dark-grey);
+    border-radius: var(--base-size-4) !important;
+    padding: var(--base-size-14) !important;
+    color: var(--white) !important;
+    text-transform: uppercase;
+    font-family: var(--Brandon) !important;
+    font-weight: bold !important;
+    letter-spacing: 1px;
+}
+
+/* ==CodeMirror editor modifications - these will not work with the default ACE editor== */
+span[role="presentation"] {
+    color: black;
+   /* changes the font colour for the editor text */
+}
+.cm-variable-2, .cm-meta {
+    color: var(--red-dark) !important;
+   /* changes the font colour for all lists (.cm-meta controls the checkbox square brackets [ ] ) */
+}
+.cm-comment {
+    color: var(--green-dark) !important;
+   /* changes the font colour for code text*/
+}
+.cm-quote {
+    color: var(--purple-dark) !important;
+   /* changes the font colour for quoted text*/
+}
+.cm-image-marker {
+    color: var(--red);
+   /* changes the font colour for the "!" before displayed image links */
+    font-weight: 900;
+   /* changes the font weight for the "!" before displayed image links */
+}
+.cm-link, .cm-url {
+/* .cm-link is everything in the square brackets | .cm-url is the url itself in the round brackets */
+    color: var(--green) !important;
+   /* changes the font colour for links */
+    text-decoration: none !important;
+   /* removes underlining for links */
+}
+.cm-tag, .cm-attribute {
+/* HTML - .cm-tag is the HTML tag itself such as "<img>" | .cm-attribute is any HTML tag attributes such as "width" or "src" */
+/* the below are NOT applied if the html text is marked as "code" unless it is in a fenced html code block (```HTML) */
+    color: var(--dark-purple) !important;
+   /* changes the font colour for HTML tags */
+    font-weight: 500;
+   /* changes the font weight for HTML tags */
+}
+.cm-hr {
+    color: var(--orange-dark) !important;
+   /* changes the font colour for horizontal rule markdown "***" */
+    font-weight: 900;
+   /* changes the font weight for horizontal rule markdown "***" */
+}
