@@ -113,3 +113,9 @@ li.md-checkbox [type="checkbox"]:checked + label:after {
 ###  Notes
 
 If you have any questions, feel free to ask, you can reach me on the Joplin's [forum](https://discourse.joplinapp.org), i'm user **@hrqmonteiro** there!
+
+### Tipjar
+
+If you want to support my work, you can donate, it would be very appreciated!
+
+**BTC**: *35MVD6xjhTh9hsQ1TYJRbHDDYL7Tf3BmbN&
