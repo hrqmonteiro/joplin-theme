@@ -5,7 +5,7 @@
 :root {
     --white: #E5FFDE;
     --dark-white: #CEE5C7;
-    --light-grey: #1E192E;
+    --light-grey: #44475A;
     --grey: #040010;
     --dark-grey: #040010;
     --darker-grey: #040010;
@@ -28,6 +28,7 @@
     --base-size-4: 5px;
     --base-size-8: 9px;
     --base-size-11: 11px;
+    --base-size-12: 12px;
     --base-size-13: 13px;
     --base-size-14: 14px;
     --base-size-15: 15px;
@@ -72,6 +73,14 @@
 
 .purple {
     color: var(--purple) !important;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-light) !important;
+    letter-spacing: 0.01em;
+    margin-top: var(--base-size-24);
+}
+
+.red {
+    color: var(--red) !important;
     font-family: var(--font-title);
     font-weight: var(--font-weight-light) !important;
     letter-spacing: 0.01em;
@@ -197,7 +206,7 @@ li.md-checkbox [type="checkbox"]:checked + label {
 /* checkbox aspect */
 li.md-checkbox [type="checkbox"]:not(:checked) + label:before,
 li.md-checkbox [type="checkbox"]:checked + label:before {
-    content: '';
+    content: '';
     position: absolute;
     left: 0; top: -3px;
     width: 1em; height: 1em;
@@ -209,7 +218,7 @@ li.md-checkbox [type="checkbox"]:checked + label:before {
 /* checked mark aspect */
 li.md-checkbox [type="checkbox"]:not(:checked) + label:after,
 li.md-checkbox [type="checkbox"]:checked + label:after {
-    content: '';
+    content: '';
     position: absolute;
     left: 0; top: -3px;
     width: 1em; height: 1em;
@@ -271,12 +280,12 @@ pre {
 /* ```inline code``` */
 .inline-code {
     font-family: var(--font-mono) !important;
-    font-size: var(--base-size-15) !important;
-    padding: .3em .6em !important;
+    font-size: var(--base-size-12) !important;
+    padding: .3em .3em !important;
     border-radius: var(--base-size-4) !important;
-    background-color: #040404 !important;
+    background-color: var(--red) !important;
     border: none !important;
-    color: var(--aqua) !important;
+    color: var(--white) !important;
 }
 
 /* ==emphasis== */

@@ -42,15 +42,15 @@
     --base-size-40: 40px;
     --base-size-272: 272px;
     --z-toc: 99;
-    --font-weight-light: 300;
-    --font-weight-base: 500;
-    --font-weight-bold: 600;
+    --font-weight-light: 200;
+    --font-weight-base: 400;
+    --font-weight-bold: 550;
     --font-sans: "GoogleSans Nerd Font"; /*Bahnschrift */
     --font-mono: "RobotoMono Nerd Font";
     --Brandon: "Brandon Grotesque";
     --Galliard: "Galliard EF Roman Italic";
-    --primary: var(--purple);
-    --secondary: var(--orange-dark);
+    --primary: var(--red);
+    --secondary: var(--yellow);
     --font-line-height: 1.4em;
     --font-size: var(--base-size-15);
     --icon-size: var(--font-size);
@@ -63,7 +63,7 @@
 
 * {
     font-family: var(--font-sans) !important;
-    font-weight: var(--font-weight-base) !important;
+    font-weight: var(--font-weight-bold) !important;
     font-size: var(--font-size) !important;
     line-height: var(--font-line-height) !important;
 }
@@ -119,30 +119,29 @@
 
 .ace_editor div, .ace_editor span {
     font-family: var(--font-mono) !important;
-    font-weight: --font-weight-base;
+    font-weight: var(--font-weight-base) !important;
     color: var(--white);
 }
 
 .ace_heading {
-    /*color: var(--white) !important;*/
     color: var(--yellow) !important;
 }
 
 /*Bold*/
 .ace_string.ace_strong {
-    color: var(--green-dark) !important;
+    color: var(--green) !important;
     font-weight: bold !important;
 }
 
 /* Italics */
 .ace_string.ace_emphasis {
-	color: var(--green-dark) !important;
+	color: var(--green) !important;
 	font-style: italic !important;
 }
 
 /* Line Breaks */
 .ace_constant.ace_language.ace_escape {
-	color: gold !important;
+	color: var(--yellow) !important;
 }
 
 .ace_variable {
@@ -151,8 +150,7 @@
 
 /* Lists and Checkboxes */
 .ace_list {
-    /*color: var(--light-grey) !important;*/
-    color: palegoldenrod !important;
+    color: var(--white) !important;
 }
 
 /* Inline Codes and Codeblocks */
@@ -190,7 +188,7 @@
 .side-bar .folders, .side-bar div, .side-bar span {
     font-family: var(--Brandon) !important;
     color: var(--white) !important;
-    font-weight: var(--font-weight-base) !important;
+    font-weight: var(--font-weight-bold) !important;
     font-size: var(--base-size-17) !important;
     margin-bottom: var(--base-size-1);
 }
@@ -198,7 +196,7 @@
 .list-item {
     font-family: var(--font-sans) !important;
     color: var(--white) !important;
-    font-weight: var(--font-weight-base) !important;
+    font-weight: var(--font-weight-bold) !important;
     font-size: var(--font-size) !important;
     margin-bottom: var(--base-size-1);
 }
@@ -212,6 +210,8 @@
     width: var(--base-size-17);
     color: var(--dark-white) !important;
 }
+
+/* Colored icons on the sidebar */
 
 .list-item div:before {
     font-family: var(--font-sans) !important;
@@ -258,6 +258,8 @@ a.list-item:before {
     color: var(--aqua);
 }
 
+/* Colored icons ENDS HERE */
+
 .list-item div {
     margin-left: auto !important;
     padding-right: var(--base-size-14) !important;
@@ -267,6 +269,7 @@ a.list-item:before {
 .synchronize-button {}
 
 .note-list {
+    font-weight: var(--font-weight-bold) !important;
     background-color: var(--black) !important;
     color: var(--white) !important;
     padding: var(--base-size-8) 0;
@@ -283,6 +286,7 @@ a.list-item:before {
 }
 
 .note-list div a {
+    font-weight: var(--font-weight-bold) !important;
     color: var(--white) !important;
     border-bottom: 0 !important;
 }
@@ -303,8 +307,8 @@ a.list-item:before {
 }
 
 .note-list a.list-item span, .tags .list-item {
-    /* font-family: "IBM Plex Mono" !important; */
-    /* font-size: 12px !important; */
+    font-family: var(--font-sans) !important;
+    font-weight: var(--font-weight-bold) !important;
     text-transform: capitalize;
     background-color: var(--black) !important;
     color: var(--white) !important;
@@ -340,7 +344,7 @@ div.tag-list span {
     min-height: 34px !important;
     font-size: var(--font-size) !important;
     font-family: var(--font-mono);
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-bold);
     background-color: var(--grey) !important
 }
 
@@ -432,7 +436,7 @@ input:focus {
     font-weight: medium !important;
     text-align: center !important;
     text-transform: uppercase !important;
-    font-size: var(--base-size-14) !important;
+    font-size: var(--base-size-10) !important;
     padding: 2px;
 }
 
