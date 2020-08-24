@@ -22,7 +22,7 @@ These are the resources i added to my theme. The [setup](#setup) section will gu
    * Colored icons on sidebar (based on the *Things 3* app); 
    * Capitalized tags (also support for icons in tags);
    * Colored tables, glyphs and text on rendered notes;
-   * Custom symbols for checklists.
+   * Custom styles for checkboxes.
    
 ## Setup:
 
