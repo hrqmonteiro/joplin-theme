@@ -17,7 +17,7 @@ This is the resources i added to my theme. The [setup](#setup) section will guid
 * Dark theme: based on the default Joplin dark theme and, as stated before, on Amanda's theme.
 * Colorscheme: i call it **Neptune**, i use it on many things on my setup (Linux rice, Vim colors, and other applications).
 * Custom CSS for the app interface and markdown editor (*userchrome.css*) and for the rendered notes (*userstyles.css*)
-* Support for icons ([FontAwesome](https://fontawesome.com) and [Material Design Icons](https://materialdesignicons.com/).
+* Support for icons ([FontAwesome](https://fontawesome.com) and [Material Design Icons](https://materialdesignicons.com/)).
 * Other stuff i modified/added: 
    * Colored icons on sidebar (based on the *Things 3* app); 
    * Capitalized tags (also support for icons in tags);
