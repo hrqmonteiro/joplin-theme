@@ -71,14 +71,45 @@ You need to get your icons from the cheatsheet, you can find it on Nerd font's w
 ![screenshot2.png](/assets/screenshot2.png)
 
 ### Notes section
-![screenshot3.png](/assets/screenshot4.png)
+![screenshot3.png](/assets/screenshot3.png)
 
 ### Rendered markdown
 ![screenshot4.png](/assets/screenshot4.png)
 
 ### Custom checkboxes
 ![screenshot5.png](/assets/screenshot5.png)
-![screenshot6.png](/assets/screenshot6.png)
+![screenshot6.png](/assets/screenshot6.png)  
 ![screenshot7.png](/assets/screenshot7.png)
+![screenshot8.png](/assets/screenshot8.png)
 
-You can set it on *userchrome.css*, just replace the glyphs for anyone you like it from FontAwesome or Material Icons.
+You can set it on *userstyle.css*, just replace the glyphs for anyone you like it from FontAwesome or Material Icons, on the following section
+
+```
+/* checkbox aspect */
+li.md-checkbox [type="checkbox"]:not(:checked) + label:before,
+li.md-checkbox [type="checkbox"]:checked + label:before {
+    content: ''; /* Unchecked glyph*/
+    position: absolute;
+    left: 0; top: -3px;
+    width: 1em; height: 1em;
+    border: 1px solid var(--black);
+    background: var(--black);
+    border-radius: 1px;
+}
+
+/* checked mark aspect */
+li.md-checkbox [type="checkbox"]:not(:checked) + label:after,
+li.md-checkbox [type="checkbox"]:checked + label:after {
+    content: ''; /* Checked glyph*/
+    position: absolute;
+    left: 0; top: -3px;
+    width: 1em; height: 1em;
+    border: 1px solid var(--black);
+    background: var(--black);
+    border-radius: 1px;
+    transition: all .2s;
+}
+```
+###  Notes
+
+If you have any questions, feel free to ask, you can reach me on the Joplin's [forum](https://discourse.joplinapp.org), i'm user **@hrqmonteiro** there!
