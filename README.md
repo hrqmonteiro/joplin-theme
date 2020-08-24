@@ -30,7 +30,7 @@ Following are the instructions if you want to replicate my theme, and the things
 
 1. You need two fonts with the FontAwesome and Material Icons glyphs, one *sans-serif* and one *monospaced*. The sans i use in all the titles and pretty much the rest of the theme, and the monospaced is used, obviously, on the markdown editor. You can get fonts patched with both glyphs (and more) using *any* of the [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/), you can download any of them on the website, or you can patch your own. I patched mine (I use Google Sans as sans and Roboto Mono as monospaced).
 
-2. Download the files. Open *userchrome.css* and *userstyles.css* and edit the fonts, replacing for the font family for the ones you are going to use.
+2. Download the files. Open *userchrome.css* and *userstyles.css* and edit the fonts, replacing it with the font families of the ones you are going to use.
 
 3. Copy *userchrome.css* and *userstyles.css* to your `joplin-desktop`folder (on Linux, it is located in `~/.config/joplin-desktop`), on Windows you can check the location clicking on `Tools > Options > General` and reading it on the first line.
 
