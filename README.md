@@ -82,4 +82,34 @@ You need to get your icons from the cheatsheet, you can find it on Nerd font's w
 ![screenshot7.png](/assets/screenshot7.png)
 ![screenshot8.png](/assets/screenshot8.png)
 
-You can set it on *userchrome.css*, just replace the glyphs for anyone you like it from FontAwesome or Material Icons.
+You can set it on *userstyle.css*, just replace the glyphs for anyone you like it from FontAwesome or Material Icons, on the following section
+
+```
+/* checkbox aspect */
+li.md-checkbox [type="checkbox"]:not(:checked) + label:before,
+li.md-checkbox [type="checkbox"]:checked + label:before {
+    content: ''; /* Unchecked glyph*/
+    position: absolute;
+    left: 0; top: -3px;
+    width: 1em; height: 1em;
+    border: 1px solid var(--black);
+    background: var(--black);
+    border-radius: 1px;
+}
+
+/* checked mark aspect */
+li.md-checkbox [type="checkbox"]:not(:checked) + label:after,
+li.md-checkbox [type="checkbox"]:checked + label:after {
+    content: ''; /* Checked glyph*/
+    position: absolute;
+    left: 0; top: -3px;
+    width: 1em; height: 1em;
+    border: 1px solid var(--black);
+    background: var(--black);
+    border-radius: 1px;
+    transition: all .2s;
+}
+```
+###  Notes
+
+If you have any questions, feel free to ask, you can reach me on the Joplin's [https://discourse.joplinapp.org](forum), i'm user **@hrqmonteiro** there!
