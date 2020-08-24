@@ -61,8 +61,24 @@ Yu can find it on the following section:
 ```  
 So if you are not going to use it, you can remove or comment out the entire section. If you are going to use it, adjust the glyps, colors and position for every one of them (i know, it is a lot of work, but i found it worth it to set to have this setup 🙂)
 
-* FontAwesome and/or Material Design Icons on sidebar, notebook titles, note titles, notes body, tags, and so on:
+* FontAwesome and/or Material Icons on sidebar, notebook titles, note titles, notes body, tags, and so on:
 
 You need to get your icons from the cheatsheet, you can find it on Nerd font's website [here](https://www.nerdfonts.com/cheat-sheet). Just search some icon you would want to use it (or navigate through it), copy it and paste it on Joplin. Tip: i keep some of which i most use on a note inside my Joplin, for future use, it is easier.
 
 ## Screenshots:
+
+### Notebooks section
+![screenshot2.png](/assets/screenshot2.png)
+
+### Notes section
+![screenshot3.png](/assets/screenshot4.png)
+
+### Rendered markdown
+![screenshot4.png](/assets/screenshot4.png)
+
+### Custom checkboxes
+![screenshot5.png](/assets/screenshot5.png)
+![screenshot6.png](/assets/screenshot6.png)
+![screenshot7.png](/assets/screenshot7.png)
+
+You can set it on *userchrome.css*, just replace the glyphs for anyone you like it from FontAwesome or Material Icons.
