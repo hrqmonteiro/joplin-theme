@@ -118,4 +118,10 @@ If you have any questions, feel free to ask, you can reach me on the Joplin's [f
 
 If you want to support my work, you can donate, it would be very appreciated!
 
-**BTC**: *35MVD6xjhTh9hsQ1TYJRbHDDYL7Tf3BmbN*
+**BTC**: *35MVD6xjhTh9hsQ1TYJRbHDDYL7Tf3BmbN*  
+**Paypal**: <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="LNV7V5LNDSZ5U" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
+</form>
